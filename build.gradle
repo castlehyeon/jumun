@@ -18,6 +18,14 @@ dependencies {
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	//TDD를 위한 코드
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	// https://mvnrepository.com/artifact/com.h2database/h2
+	testImplementation group: 'com.h2database', name: 'h2', version: '2.1.214'
+	//이니셜라이져에서 추가 -> 빨간 글씨 없어짐
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	runtimeOnly 'com.h2database:h2'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+
 
 }
 
